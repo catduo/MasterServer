@@ -1,5 +1,4 @@
 <?php
-echo "connecting";
     require_once("connect.php");
     
     $db = new DB();
@@ -15,4 +14,5 @@ echo "connecting";
         echo "</pre>";
         //echo "<div><b>$user[email]</b>: $user[created]</div>";
     }
+echo $ip;
 ?>
