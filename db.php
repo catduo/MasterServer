@@ -60,7 +60,7 @@
             $now = strtotime($this->getDatabaseTime());
             $result = mysqli_query($this->conn,"SELECT * FROM server_list");
             $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
-            if (count($data) == 0) return [];
+            if (count($data) == 0) return null;
 
             $activeServers = array();
             foreach ($data as $row) {
@@ -146,5 +146,4 @@
             mysqli_close($this->conn);
         }
     }
-    
 ?>
