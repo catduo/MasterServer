@@ -1,7 +1,6 @@
 <?php
     class DB {
         public $conn;
-        public $dbname;
 
         public function __construct() {
         }
